@@ -19,7 +19,7 @@ hiredis==1.0.1  # https://github.com/redis/hiredis-py
 {%- if cookiecutter.cloud_provider == 'AWS' %}
 django-storages[boto3]==1.9.1  # https://github.com/jschneier/django-storages
 {%- elif cookiecutter.cloud_provider == 'GCP' %}
-django-storages[google]==1.9.1  # https://github.com/jschneier/django-storages
+#django-storages[google]==1.9.1  # https://github.com/jschneier/django-storages
 {%- endif %}
 {%- if cookiecutter.mail_service == 'Mailgun' %}
 django-anymail[mailgun]==7.1.0  # https://github.com/anymail/django-anymail
@@ -39,4 +39,6 @@ django-anymail[sendinblue]==7.1.0  # https://github.com/anymail/django-anymail
 django-anymail[sparkpost]==7.1.0  # https://github.com/anymail/django-anymail
 {%- elif cookiecutter.mail_service == 'Other SMTP' %}
 django-anymail==7.1.0  # https://github.com/anymail/django-anymail
+{%- elif cookiecutter.mail_service == 'None' %}
+
 {%- endif %}
