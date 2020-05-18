@@ -29,9 +29,7 @@
     "Gulp"
   ],
   "cloud_provider": [
-    "AWS",
-    "GCP",
-    "None"
+    "GCP"
   ],
   "mail_service": [
     "Mailgun",
@@ -42,7 +40,8 @@
     "Sendgrid",
     "SendinBlue",
     "SparkPost",
-    "Other SMTP"
+    "Other SMTP",
+    "None"
   ],
   "use_async": "n",
   "use_drf": "n",
@@ -59,6 +58,5 @@
     "Gitlab"
   ],
   "keep_local_envs_in_vcs": "y",
-
   "debug": "n"
 }
